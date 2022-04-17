@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "907812182064",
+    "firebase_url": "https://coffeeapp-a3ca1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "coffeeapp-a3ca1",
+    "storage_bucket": "coffeeapp-a3ca1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907812182064:android:e213332c8c97eb21e0b5f5",
+        "android_client_info": {
+          "package_name": "com.example.vdrecycleview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907812182064-i66od1evfvqj3nt1a8ia4qgn4qak0spj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6wbrU8Po15jg2f2bUwdyq-Bysk2beuQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907812182064-i66od1evfvqj3nt1a8ia4qgn4qak0spj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907812182064:android:90b9d4a8b903c71ee0b5f5",
+        "android_client_info": {
+          "package_name": "trantruong9080.gmail.com.btfbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907812182064-i66od1evfvqj3nt1a8ia4qgn4qak0spj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6wbrU8Po15jg2f2bUwdyq-Bysk2beuQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907812182064-i66od1evfvqj3nt1a8ia4qgn4qak0spj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

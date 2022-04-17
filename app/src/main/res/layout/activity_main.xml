@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="12"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_weight="4"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+    </ImageView>
+
+    <EditText
+        android:layout_weight="1"
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:background="@drawable/bordertv"
+        android:layout_height="70dp"
+        android:hint="     Tên đăng nhập"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:background="@drawable/bordertv"
+        android:hint="     Mật khẩu"
+        android:layout_height="70dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_dangnhap"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#4C1C1C"
+        android:text="Đăng nhập">
+
+    </Button>
+
+    <Button
+        android:layout_weight="1"
+        android:id="@+id/btn_dangky"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#3B883E"
+        android:text="Đăng ký">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:text="Quên mật khẩu? ">
+    </TextView>
+
+</LinearLayout>
