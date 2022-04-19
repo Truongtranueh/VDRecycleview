@@ -3,17 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable-anydpi/ic_logout.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable-mdpi/bordertv.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable-mdpi/container_search.xml" value="0.1025" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable/border2.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable/ic_account.xml" value="0.1" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable/ic_cart.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable/ic_notification.xml" value="0.1025" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/drawable/ic_service.xml" value="0.1025" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/activity_dang_ky.xml" value="0.184375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/activity_main.xml" value="0.184375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/activity_trangchu.xml" value="0.184375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/fragment_account.xml" value="0.184375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/fragment_cart.xml" value="0.184375" />
-        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/fragment_home.xml" value="0.184375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/fragment_service.xml" value="0.184375" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/item.xml" value="0.184375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/item_top.xml" value="0.184375" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/layout/singlerow.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/VDRecycleview/app/src/main/res/menu/bottom_menu.xml" value="0.184375" />

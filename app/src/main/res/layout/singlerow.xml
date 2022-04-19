@@ -1,73 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    app:cardCornerRadius="20dp"-->
+<!--    android:elevation="5dp"-->
+<!--    app:cardUseCompatPadding="true">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="15dp">-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/img1"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:src="@drawable/caphesua"-->
+<!--            app:civ_border_color="#2196F3"-->
+<!--            app:civ_border_width="1dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/nametext"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@id/img1"-->
+<!--            android:text="Tên"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/descriptiontext"-->
+<!--            android:text="Mô tả"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_toRightOf="@id/img1"-->
+<!--            android:layout_below="@id/nametext"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/pricetext"-->
+<!--            android:text="Giá"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textColor="#000"-->
+<!--            android:layout_toRightOf="@id/img1"-->
+<!--            android:layout_below="@id/descriptiontext"-->
+<!--            android:layout_marginLeft="10dp"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/btnadd"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/pricetext"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_toRightOf="@id/img1"-->
+<!--            android:backgroundTint="#328035"-->
+<!--            android:text="Mua ngay"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="20sp"-->
+<!--            app:icon="@drawable/ic_bag" />-->
+
+<!--    </RelativeLayout>-->
+
+<!--</androidx.cardview.widget.CardView>-->
+
+
+<androidx.cardview.widget.CardView android:id="@+id/card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="20dp"
-    android:elevation="5dp"
-    app:cardUseCompatPadding="true">
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
 
-    <RelativeLayout
+    app:cardCornerRadius="15dp"
+    app:cardElevation=".1dp"
+    app:cardPreventCornerOverlap="true"
+    >
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/img1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
             android:src="@drawable/caphesua"
-            app:civ_border_color="#2196F3"
-            app:civ_border_width="1dp" />
+            android:contentDescription="@string/app_name" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/nametext"
-            android:text="Name"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="#000"
-            android:layout_toRightOf="@id/img1"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/bariol_bold"
+            android:text="Cà phê sữa"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/descriptiontext"
-            android:text="Description"
-            android:textSize="12sp"
-            android:textColor="#000"
-            android:layout_toRightOf="@id/img1"
-            android:layout_below="@id/nametext"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
 
+            android:layout_marginRight="20dp"
 
+            android:fontFamily="@font/bariol_regular"
+            android:text="Cà phê được pha trộn từ"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/pricetext"
-            android:text="Price"
-            android:textSize="20sp"
-            android:textColor="#000"
-            android:layout_toRightOf="@id/img1"
-            android:layout_below="@id/descriptiontext"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
 
-        <Button
-            android:id="@+id/btn_add"
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/pricetext"
-            android:layout_gravity="center"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="10dp"
-            android:layout_toRightOf="@id/img1"
-            android:backgroundTint="#3B883E"
-            android:text="+">
-        </Button>
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
 
-    </RelativeLayout>
+            android:fontFamily="@font/bariol_regular"
+            android:text="25000 VND"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Button>
+    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
