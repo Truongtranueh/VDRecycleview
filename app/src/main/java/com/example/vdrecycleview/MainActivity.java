@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_dangky, btn_dangnhap;
     EditText txtemail, txtpass;
     private FirebaseAuth mAuth;
+    Button btnadd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btn_dangky.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, DangKy.class);
+                Intent i = new Intent(MainActivity.this, Regis.class);
                 startActivity(i);
             }
         });
@@ -45,37 +46,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
     }
     private  void UserLogin(){
-//        txtemail = findViewById(R.id.edt_email);
-//        txtpass = findViewById(R.id.edt_password);
-//
-//        String a = txtemail.getText().toString().trim();
-//        String b = txtpass.getText().toString().trim();
-//
-//        if(a.isEmpty()){
-//            txtemail.setError("Bạn chưa nhập email!");
-//            txtemail.requestFocus();
-//            return;
-//        }
-//        if(b.isEmpty()){
-//            txtpass.setError("Bạn chưa nhập mật khẩu!");
-//            txtpass.requestFocus();
-//            return;
-//        }
-//        mAuth.signInWithEmailAndPassword(a,b).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-//            @Override
-//            public void onComplete(@NonNull Task<AuthResult> task) {
-//                if(task.isSuccessful()){
+        txtemail = findViewById(R.id.edt_email);
+        txtpass = findViewById(R.id.edt_password);
+
+        String a = txtemail.getText().toString().trim();
+        String b = txtpass.getText().toString().trim();
+
+        if(a.isEmpty()){
+            txtemail.setError("Bạn chưa nhập email!");
+            txtemail.requestFocus();
+            return;
+        }
+        if(b.isEmpty()){
+            txtpass.setError("Bạn chưa nhập mật khẩu!");
+            txtpass.requestFocus();
+            return;
+        }
+        mAuth.signInWithEmailAndPassword(a,b).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
                     Intent sucess = new Intent(MainActivity.this,DirectionFragment.class);
                     startActivity(sucess);
-//                }
-//                else {
-//                    Toast.makeText(getApplicationContext(),"Đăng nhập thất bại!", Toast.LENGTH_LONG).show();
-//                }
-//            }
-//        });
+                }
+                else {
+                    Toast.makeText(getApplicationContext(),"Đăng nhập thất bại!", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
     }
-
 
 }

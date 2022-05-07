@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="8dp"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardPreventCornerOverlap="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_margin="12dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/caphesua"
+                android:contentDescription="@string/app_name" />
+            <TextView
+                android:id="@+id/pricetextcart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="13dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bariol_regular"
+                android:text="25000 VND"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:layout_marginBottom="15dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+            <TextView
+                android:id="@+id/nametext_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/bariol_bold"
+                android:text="Cà phê sữa"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_weight="2"/>
+
+                <ImageView
+                    android:id="@+id/deleteicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_delete"
+                    android:layout_weight="0"
+                    android:clickable="true"
+                    android:foreground="?selectableItemBackground" />
+            </LinearLayout>
+
+        <TextView
+                android:id="@+id/descriptiontext_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/bariol_regular"
+                android:text="Cà phê được pha trộn từ"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearS"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#773530"
+                    android:clickable="true"
+                    android:src="@drawable/ic_decrease"
+                    android:id="@+id/decrementcoffee"
+                    android:foreground="?selectableItemBackground" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_marginVertical="8dp"
+                    android:id="@+id/quantityWantBuy"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/bariol_regular"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"/>
+
+                <ImageView
+                    android:src="@drawable/ic_increase"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#773530"
+                    android:clickable="true"
+                    android:id="@+id/incrementcoffee"
+                    android:foreground="?selectableItemBackground" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

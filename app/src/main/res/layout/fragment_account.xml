@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@drawable/backgroundaccount"
     tools:context=".AccountFragment">
 
     <LinearLayout
@@ -12,6 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="30dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -23,7 +25,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/ic_account"
-                app:civ_border_color="#FF5722"
+                app:civ_border_color="#4CAF50"
                 app:civ_border_width="2dp" />
 
             <TextView
@@ -34,16 +36,28 @@
                 android:layout_toRightOf="@id/profileCircleImageView"
                 android:fontFamily="@font/bariol_bold"
                 android:text="Tieu Nha Thanh"
-                android:textStyle="bold"
-                android:textSize="25dp" />
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/emailTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/usernameTextView"
                 android:layout_toRightOf="@id/profileCircleImageView"
                 android:fontFamily="@font/bariol_regular"
-                android:text="Đứa con của thần rùa"
+                android:text="tieunhathanh@gmail.com"
+                android:textColor="#5D5C5C"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTextView"
+                android:layout_toRightOf="@id/profileCircleImageView"
+                android:fontFamily="@font/bariol_regular"
+                android:text="21"
                 android:textColor="#5D5C5C"
                 android:textSize="18dp" />
 
@@ -62,7 +76,7 @@
             android:fontFamily="@font/bariol_bold"
             android:textSize="25dp"
             android:textColor="#2196F3"
-            android:text="Profile"/>
+            android:text="Hồ sơ"/>
 
         <TextView
             android:layout_marginTop="10dp"
@@ -70,7 +84,7 @@
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:drawableLeft="@drawable/ic_edit"
-            android:text="      Edit Profile" />
+            android:text="      Chỉnh sửa hồ sơ" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -78,7 +92,7 @@
             android:drawableLeft="@drawable/ic_password"
             android:layout_marginTop="20dp"
             android:textSize="20dp"
-            android:text="      Change Password" />
+            android:text="      Thay đổi Password" />
         <TextView
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
@@ -126,8 +140,9 @@
             android:textSize="20dp"
             android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_location"
-            android:text="      Thành phố Hồ Chí Minh" />
+            android:text="      Quận 10, TPHCM" />
         <Button
+            android:id="@+id/btn_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

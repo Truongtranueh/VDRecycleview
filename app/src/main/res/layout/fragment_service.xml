@@ -1,46 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MainActivity">-->
-
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:padding="10dp"-->
-<!--        app:cardCornerRadius="20dp">-->
-<!--        <com.denzcoskun.imageslider.ImageSlider-->
-<!--            android:id="@+id/image_slider"-->
-<!--            android:background="@drawable/slide1"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="200dp"-->
-<!--            app:iss_auto_cycle="true"-->
-<!--            app:iss_period="2000"-->
-<!--            app:iss_placeholder="@drawable/slide1"-->
-<!--            app:iss_error_image="@drawable/slide2"-->
-<!--            app:iss_delay="2"/>-->
-<!--    </androidx.cardview.widget.CardView>-->
-
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recview"-->
-<!--        android:background="#D8E2EA"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_marginStart="1dp"-->
-<!--        android:layout_marginTop="1dp"-->
-<!--        android:layout_marginEnd="1dp"-->
-<!--        android:layout_marginBottom="1dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -49,10 +9,9 @@
     tools:context=".ServiceFragment">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#F6B766"
+        android:layout_height="230dp"
+        android:background="#8BC34A"
         android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,9 +19,7 @@
 
             android:paddingLeft="32dp"
             android:paddingTop="16dp"
-            android:paddingRight="32dp"
-
-            android:weightSum="100">
+            android:paddingRight="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,8 +63,6 @@
             android:background="@drawable/container_search"
             android:drawableStart="@drawable/ic_search"
 
-
-
             android:drawablePadding="5dp"
             android:fontFamily="@font/bariol_regular"
 
@@ -124,27 +79,7 @@
             android:textSize="14sp">
 
         </EditText>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@null">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="80dp"
-                    android:background="#EDE8E8"
-                    android:orientation="vertical">
-
-                </LinearLayout>
-
+    </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -160,17 +95,10 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="30dp"
                         app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-
-                        app:spanCount="2"
-
+                        app:spanCount="1"
                         >
                     </androidx.recyclerview.widget.RecyclerView>
 
                 </LinearLayout>
-            </RelativeLayout>
 
-        </LinearLayout>
-    </LinearLayout>
-
-
-</androidx.core.widget.NestedScrollView>
+</LinearLayout>

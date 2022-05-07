@@ -17,14 +17,14 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class DangKy extends AppCompatActivity{
+public class Regis extends AppCompatActivity{
     private FirebaseAuth mAuth;
     private EditText edtname, edtage, edtemail, edtpass;
     private Button btndangky, btnback;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dang_ky);
+        setContentView(R.layout.activity_regis);
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -40,7 +40,7 @@ public class DangKy extends AppCompatActivity{
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent bc = new Intent(DangKy.this,MainActivity.class);
+                Intent bc = new Intent(Regis.this,MainActivity.class);
                 startActivity(bc);
             }
         });
@@ -94,13 +94,13 @@ public class DangKy extends AppCompatActivity{
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if(task.isSuccessful()){
-                                                Toast.makeText(DangKy.this,"Đăng ký thành công", Toast.LENGTH_LONG).show();
+                                                Toast.makeText(Regis.this,"Đăng ký thành công", Toast.LENGTH_LONG).show();
                                             }
                                         }
                                     });
                                 }
                                 else {
-                                    Toast.makeText(DangKy.this,"Đăng ký không thành công", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(Regis.this,"Đăng ký không thành công", Toast.LENGTH_LONG).show();
                                 }
                             }
                         });
